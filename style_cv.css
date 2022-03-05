@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    /*Цвет страницы и текста*/
+    background-color: #f1f1f1;
+    color: #0f141e;
+    /*Шрифт и его вариации*/
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    /* Другой вариант записи селекторов для шрифта\font
+    font: normal 16px 'Roboto', sans-serif;*/
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+a:visited {
+    color: grey;
+}
+
+/*Фото в начале*/
+.avatar {
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 25);
+}
+/* Text about myself*/
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    /*text-transform: inherit;*/
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+/*box-model*/
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 30px;
+
+}
+/*.social {*/
+    /*background-color: rgba(39, 198, 204, 0.205);*/
+    /*padding: 15px;*/ /*Значение указывается сразу для всех сторон квадрата*/
+    /*padding: 15px 40px;*/ /*Значние указывается сначала для верхней и 
+    нижней стороны, а после для левой и правой*/
+    /*padding: 15px 20px 25px 30px;*/ /*Значения указывается по часовой стрелке (вверх,лево,низ,право)*/
+    /* Значение указвается отдельно для каждой стороны с помощью селектора*/
+   /* padding-top: 15px;*/
+   /* padding-right: 20px;*/
+    /*padding-bottom: 25px;*/
+    /*padding-left: 30px;*/
+   /* margin: 5px;*/
+   /* border: 5px solid red;*/
+   /* border-bottom-style: dotted;*/
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+.listabout li {
+    list-style-type: disc;
+
+}
+
+.listhobbi {
+    padding: 0 20px;
+}
+.listhobbi li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+.tableworkexp {
+    width: 100%;
+}
+.tableworkexp td {
+    padding-bottom: 10px;
+}
+.tableworkexp td:nth-child(2), .tableworkexp td:nth-child(3)  {
+    color: #86898f;
+}
+.contact h2 {
+    text-align: center;
+}
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f ;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.row > .form-group {
+    width: 50%;
+}
+.row > .form-group:first-child {
+    margin-right: 20px;
+}
+.btn {
+    background: #111;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.9;
+}
